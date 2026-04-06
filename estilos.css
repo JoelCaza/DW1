@@ -1,30 +1,45 @@
-body{
-background-color: beige;
-}
-button{
-    background-color: #18F20C;
-  border: 1.5px;
-  border-color: white;
-  border-radius: 20px;
-  color: white;
-}
-img{
-    display: block;
-    margin: 0 auto;
+/* Relative Position*/
+.flor{
+    width: 100px;
+    height: 100px;
+    position: relative;
+    margin: 50px auto;
 }
 
-.btnSucess{
-background-color: aqua;
-}
-button:hover{
-    background-color: red;
-    color: black;
+.centro{
+    width: 50px;
+    height: 50px;
+    background-color: yellow;
+    border-radius: 50%;
+    right: 100px;
+    left: 250px;
+    transform-origin: center;  
 }
 
-p{
-    text-align: center;
-    padding: 10px;
-    font-size: 10px;
-    font-weight: bold;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+/*Absolute Position*/
+.petalo{
+    position: absolute;
+    width: 40px;
+    height: 60px;
+    background-color: pink;
+    border-radius: 50% 50% 0 0;
+    top: 0;
+    left: 30px;
+    transform-origin: bottom center;
 }
+.petalo1 {
+    transform: rotate(0deg);
+}
+.petalo2 {
+    transform: rotate(72deg);
+}
+.petalo3 {
+    transform: rotate(144deg);
+}
+.petalo4 {
+    transform: rotate(216deg);
+}
+.petalo5 {
+    transform: rotate(288deg);
+}
+
